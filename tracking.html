@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package tracking - Amazon Logistics</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Amazon Logistics
+    </div>
+
+    <nav>
+        <a href="index.html">front page</a>
+        <a href="tracking.html">Package tracking</a>
+        <a href="address.html">Address Update</a>
+        <a href="payment.html">Service Description</a>
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Package tracking</h2>
+
+        <p>
+            Please enter your package tracking number.
+        </p>
+
+        <input
+            type="text"
+            id="trackingNumber"
+            placeholder="For example：NSD123456789">
+
+        <br><br>
+
+        <button onclick="searchPackage()">
+            Package tracking
+        </button>
+
+    </div>
+
+    <div
+        id="result"
+        class="card"
+        style="display:none;margin-top:20px;">
+
+        <h3>Query results</h3>
+
+        <p>
+            Package status：
+            <strong>Arrived at the local distribution center</strong>
+        </p>
+
+        <p>
+           Current City:
+            Amazon's Seattle delivery headquarters
+        </p>
+
+        <p>
+            Delivery Status:
+Pending Delivery
+        </p>
+
+        <p>
+            Update time：
+            2026-10-05 09:30
+        </p>
+
+        <p style="color:#d35400;font-weight:bold;">
+            The shipping information needs to be updated. Please verify the shipping address.
+        </p>
+
+        <a href="address.html" class="button">
+            Go to address update
+        </
